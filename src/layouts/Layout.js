@@ -1,5 +1,5 @@
 import {NavLink, Outlet} from "react-router-dom";
-import Breadcrumbs from "./Breadcrumbs";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 const Layout = () => {
     return (
@@ -14,13 +14,14 @@ const Layout = () => {
                 </div>
             </div>
 
-            <Breadcrumbs/>
 
 
-
-            <main>
-                <Outlet />
-            </main>
+                <div className="bread">
+                    <Breadcrumbs/>
+                </div>
+                <div className="outlet">
+                    <Outlet />
+                </div>
         </div>
     )
 }

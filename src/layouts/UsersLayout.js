@@ -5,9 +5,9 @@ const UsersLayout = () => {
         <div>
             <h1>Users</h1>
 
-            <main>
+            <div className="outlet-user">
                 <Outlet/>
-            </main>
+            </div>
         </div>
     )
 }

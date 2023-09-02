@@ -11,9 +11,9 @@ const Help = () => {
                 <NavLink to="contact">Contact Us</NavLink>
             </div>
 
-            <main>
+                <div className="outlet-help">
                     <Outlet />
-            </main>
+                </div>
         </div>
     )
 }
