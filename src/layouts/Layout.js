@@ -5,9 +5,9 @@ const Layout = () => {
     return (
         <div>
             <div className="navbar">
-                <NavLink to="/" className="logo">Router Web</NavLink>
+                <NavLink to="react-router" className="logo">Router Web</NavLink>
                 <div className="menu">
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/react-router" >Home</NavLink>
                     <NavLink to="about">About</NavLink>
                     <NavLink to="users">Users</NavLink>
                     <NavLink to="help">Help</NavLink>

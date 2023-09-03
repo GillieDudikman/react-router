@@ -9,7 +9,7 @@ const UserError = () => {
                 Error
             </h1>
             <p>{error.message}</p>
-            <Link to="/">Back to Homepage</Link>
+            <Link className="hover:text-white" to="/react-router">Back to Homepage</Link>
         </div>
     )
 }

@@ -2,12 +2,12 @@ import {Link, useLoaderData} from "react-router-dom";
 
 export default function Users() {
 
-    const users = useLoaderData();
+    const result = useLoaderData();
 
     return (
         <div className="flex flex-col space-y-11 w-[500px]">
             {
-                users.map(user => (
+                result.users.map(user => (
                     <div className="users-main" key={user.id}>
                         <img alt={user.username} src={user.image}/>
                         <div className="flex flex-col m-12">
@@ -24,10 +24,10 @@ export default function Users() {
 }
 
 export const usersLoader = async () => {
-    const res = await fetch("http://localhost:4000/users")
+    const res = await fetch("https://dummyjson.com/users")
 
     if(!res.ok)
-        throw new Error("Could not fetch users ")
+        throw new Error ("Could not fetch users ")
 
     return res.json()
 }

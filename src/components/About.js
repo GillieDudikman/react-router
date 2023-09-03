@@ -5,7 +5,7 @@ const About = () => {
     const [user, setUser] =  useState("abc");
 
     if(!user)
-        return <Navigate to="/" replace={true}/>
+        return <Navigate to="/react-router" replace={true}/>
 
     return (
         <div>

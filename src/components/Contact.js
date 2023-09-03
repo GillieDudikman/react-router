@@ -8,7 +8,7 @@ const Contact = () => {
     return (
         <div className="contact">
             <h1>Contact Us</h1>
-            <Form method="post" action="/help/contact">
+            <Form method="post" action="/react-router/help/contact">
                 <label>
                     <span>Your Email:</span>
                     <input type="email" name="email"
@@ -46,6 +46,6 @@ export const contactAction = async ({ req }) => {
     if(Object.keys(submission.errors).length)
         return submission.errors;
 
-    return redirect("/")
+    return redirect("/react-router")
 
 }

@@ -21,12 +21,12 @@ const UserDetails = () => {
 export const detailsLoader = async ({ params }) => {
     const { id } = params;
 
-    const res = await fetch("http://localhost:4000/users/" + id)
+    const result = await fetch("https://dummyjson.com/users/" + id)
 
-    if(!res.ok)
+    if(!result.ok)
         throw new Error("Could not find user")
 
-    return res.json();
+    return result.json();
 }
 
 export default UserDetails;
