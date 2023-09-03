@@ -52,20 +52,20 @@ form {
 }
 
 .contact input {
-    @apply rounded-full p-2 focus:outline-slate-50 focus:outline-4 focus:outline-offset-4 focus:ring invalid:border-pink-500 invalid:text-pink-600
+    @apply flex rounded-full p-2 w-[450px] focus:outline-slate-50 focus:outline-4 focus:outline-offset-4 focus:ring invalid:border-pink-500 invalid:text-pink-600
     focus:invalid:border-pink-500 focus:invalid:ring-pink-500
 }
 
 .contact span {
-    @apply m-6 pb-8
+    @apply flex pb-3
 }
 
-.contact label{
-    @apply m-3
+.contact label {
+    @apply mb-8
 }
 
 .contact textarea {
-    @apply rounded-2xl mt-6 p-2 w-[80%] h-[80%] focus:outline-slate-50 focus:outline-4 focus:outline-offset-4 focus:ring
+    @apply flex rounded-2xl p-2 w-[450px] h-[180px] focus:outline-slate-50 focus:outline-4 focus:outline-offset-4 focus:ring
 }
 
 .contact button {
